@@ -46,7 +46,6 @@ def restart_deployment(namespace_name, deployment_name):
         log(resp, LogLevel.debug.value)
         log("deployment {deployment_name} restarted.\n")
     except Exception as error:
-        print(error)
         log(f"Faced Error when attempting to restart deployment {deployment_name} error : {error}", LogLevel.error.value)
 
 atexit.register(exit_handler)
