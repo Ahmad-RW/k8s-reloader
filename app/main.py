@@ -1,4 +1,4 @@
-from kubernetes import client, config, watch
+from kubernetes import client, config
 import time, atexit, datetime, pytz
 from enum import Enum
 import this
